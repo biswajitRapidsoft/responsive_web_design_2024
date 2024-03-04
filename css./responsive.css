@@ -1,0 +1,204 @@
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 6%;
+        padding: 16px;
+    }
+
+    .logo h1 {
+        font-size: 31px;
+    }
+
+    .nav-menu {
+        margin-right: 6%;
+    }
+    
+    .nav-menu a {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: none;
+    }
+
+    .product {
+        padding: 20px 30px;
+    }
+
+    .all-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #laptop, #mobile {
+        display: none;
+    }
+    
+    #tablet {
+        display: block;
+    }
+
+    .hero-text {
+        position: static;
+        width: 50%;
+        height: 100vh;
+        margin: 40px 70px 20px;
+        text-align: center;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .product-section {
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        margin-bottom: 30px;
+        text-align: justify;
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .hero-text button {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .newsletter {
+        width: 95%;
+        padding: 40px 70px;
+    }
+
+    form input {
+        width: 60vw;
+    }
+
+    form {
+        width: 80vw;
+    }
+
+    .footer-lists h3 {
+        font-size: 16.5px;
+    }
+
+    .footer-lists h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        margin-left: 6%;
+        padding: 12px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        grid-template-columns: none;
+    }
+
+    .product {
+        max-width: 300px;
+        padding: 20px 30px;
+    }
+
+    .all-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #laptop, #tablet {
+        display: none;
+    }
+    
+    #mobile {
+        display: block;
+    }
+
+    .hero-text {
+        position: static;
+        width: 80%;
+        height: 100vh;
+        margin: auto 30px auto 30px;
+        text-align: center;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .product-section {
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .hero-text button {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+
+    .newsletter {
+        width: 95%;
+        padding: 5px 10px;
+    }
+    
+    form input {
+        width: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-right: 2px solid rgb(0, 0, 0, 0.4);
+    }
+
+    form button {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .footer-lists h3 {
+        font-size: 14px;
+    }
+
+    .footer-lists h1 {
+        font-size: 18px;
+    }
+}
