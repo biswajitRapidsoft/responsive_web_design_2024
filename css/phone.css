@@ -1,0 +1,90 @@
+/* my code */
+
+@media screen and (max-width: 1090px) {
+  .bestseller {
+    max-width: 610px;
+  }
+
+  .product {
+    grid-column: 1/4;
+  }
+  .about-img img {
+    display: none;
+  }
+  .about-img1 img {
+    display: block;
+  }
+  .about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px;
+    width: 300px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header{
+    justify-content: space-around;
+
+  }
+  .logo {
+    margin-left:0;
+  }
+  nav {
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .about-img img {
+    display: none;
+  }
+  .about-img1 img {
+    display: none;
+  }
+  .about-img2 img {
+    display: block;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .about-text {
+    position: static;
+    transform: translateY(0%);
+    margin: auto auto;
+    width: 300px;
+    color: black;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* text-align: justify; */
+  }
+  .about-text button {
+    display: block;
+    margin: 50px 0;
+  }
+  .bestseller {
+    max-width: 300px;
+  }
+  .newsletter {
+    margin: 20px auto;
+  }
+
+  .allabout {
+    max-width: 300px;
+    grid-template-columns: auto auto;
+  }
+  .allabout-text h2 {
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: large;
+  }
+}

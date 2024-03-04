@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* header  */
+header {
+    background-color:white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.logo {
+    margin-left:100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .dark {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo .light {
+    font-size: 20px;
+
+}
+
+.logo .point {
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+nav {
+    margin-right:100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+   display: block;
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.548);
+}
+nav ul li:hover a{
+    color: rgb(0, 0, 0);
+ }
+
+
+.burger{
+    display: none;
+}
+
+/* about */
+.about {
+    position: relative;
+}
+
+.about-img img {
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+.about-img1 img {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+.about-img2 img {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 50px;
+    width: 300px;
+    color: white;
+    
+}
+
+.about-text h1 {
+    margin: 30px 0;
+    /* width: 200px; */
+    line-height: 30px;
+}
+
+.about-text p {
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.about-text button {
+    background-color: rgb(83, 83, 179);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.about-text button:hover {
+    background-color: white;
+    color: rgb(83, 83, 179);
+
+}
+
+/* best sellers  */
+.bestseller {
+    max-width: 1040px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-self: center;
+}
+
+.bestseller h1 {
+    margin-top: 60px;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.line {
+    width: 60px;
+    height: 5px;
+    background-color: greenyellow;
+    grid-column: 1/4;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.product {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product .new {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 2px 10px;
+    background-color: red;
+    color: white;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.product-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-text {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.product-text .blue {
+    color: blue;
+    font-size: small;
+}
+
+.product-text .bold {
+
+    font-weight: bold;
+    font-size: larger;
+}
+
+.product-text .bold-red {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.product-text .bold-red::after {
+    content: " US$ 18.49";
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.323);
+    font-weight: normal;
+    font-size: medium;
+
+}
+
+.product-text button {
+    background-color:white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    color: black;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+.product-text button:hover {
+    background-color:black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    color: white;
+    border: none;
+    border: 1px solid white;
+}
+
+/* newsletter  */
+.newsletter {
+    max-width: 640px;
+    margin: 80px auto;
+    background-color: rgb(213, 213, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.newsletter h2 {
+    margin-top: 10px ;
+    text-align: center;
+    line-height: 50px;
+}
+
+.newsletter p {
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input[type="email"] {
+    margin-bottom:20px ;
+    display: block;                     
+    padding: 10px 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 1px solid black;
+
+}
+
+.newsletter input[type="submit"] {
+    margin-bottom: 20px ;
+    display: block;
+    padding: 10px 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: blue;
+    border: none;
+    color: white;
+
+}
+
+/* footer  */
+footer {
+    background-color: rgb(71, 71, 71);
+}
+
+.allabout {
+    max-width: 640px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: whitesmoke;
+}
+
+.allabout-text h2 {
+    line-height: 50px;
+    font-size: large;
+}
+
+.allabout-text p {
+    line-height: 25px;
+    font-size: medium;
+}
+
+.footer-text {
+    text-align: center;
+    background-color: rgb(58, 57, 57);
+    padding: 5px 0;
+    color: whitesmoke;
+}
+
